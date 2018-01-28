@@ -1,0 +1,6 @@
+>>> os.path.split('C:/Users/Near/Desktop/1/11.mkv')
+('C:/Users/Near/Desktop/1', '11.mkv')
+>>> 
+os.path.splitext('/path/to/file.txt')
+
+('/path/to/file', '.txt')

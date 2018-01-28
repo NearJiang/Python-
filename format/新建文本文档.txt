@@ -1,0 +1,58 @@
+觉醒案例：
+print("{0:^30}\n{1:^30}\n{1:10}".format("age","name"))
+        age
+	name
+name
+
+
+>>> '{0} love {1} {2}'.format('I','U',',qibaobao')
+'I love U ,qibaobao'
+>>> '{a} love {b} {c}'.format(a='I',b='U',c=',qibaobao')
+'I love U ,qibaobao'
+>>> '{0} love {b} {c}'.format('I',b='U',c=',qibaobao')
+'I love U ,qibaobao'
+>>> 
+格式限定符
+通过{} : 符号
+
+填充和对齐
+
+^<>分别表示居中、左对齐、右对齐，后面带宽度
+
+
+>>> '{:>10}'.format('jihite')
+'    jihite'
+>>> '{:<10}'.format('jihite')
+'jihite    '
+>>> '{:^10}'.format('jihite')
+'  jihite  '
+
+精度和类型f
+
+精度常和f一起使用
+
+>>> '{:.2f}'.format(3.1415)
+'3.14'
+>>> '{:.4f}'.format(3.1)
+'3.1000'
+
+进制转化
+
+>>> '{:b}'.format(10)
+'1010'
+>>> '{:o}'.format(10)
+'12'
+>>> '{:d}'.format(10)
+'10'
+>>> '{:x}'.format(10)
+'a'
+
+其中b o d x分别表示二、八、十、十六进制
+
+千位分隔符
+
+>>> '{:,}'.format(1000000)
+'1,000,000'
+  >>> '{:,}'.format(100000.23433)
+  '100,000.23433'
+这种情况只针对数字
